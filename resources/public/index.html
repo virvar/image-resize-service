@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta content="">
+    <style></style>
+  </head>
+  <body>
+    <!-- Original image -->
+    <img id="original-image" src="" />
+    <!-- Resized image -->
+    <img id="resized-img" src="" />
+
+    <script type="text/javascript">
+      var originalSrc = "http://fc04.deviantart.net/fs16/f/2007/127/2/d/Wallpaper_Request_by_Finvara.jpg";
+      document.getElementById("original-image").src = originalSrc;
+      var resizedSrc = "/200/200/" + encodeURIComponent(originalSrc);
+      document.getElementById("resized-img").src = resizedSrc;
+    </script>
+  </body>
+</html>
